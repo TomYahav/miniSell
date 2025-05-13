@@ -1,13 +1,12 @@
+package MiniShellTom;
+import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
-import java.io.File;
 public class MiniShell {
     public static void main(String[] args) throws IOException {
         Scanner scanner = new Scanner(System.in);
         ShellCommandHandler handler = new ShellCommandHandler();
-
         System.out.println("Welcome to MiniShell! Type 'help' for a list of commands.");
-
 
         while (true) {
             System.out.print(handler.getCurrentDirectory().getAbsolutePath() + " > ");
